@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student CRUD System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Management System</h1>
+	<div id="loader" style="display:none;">
+		Loading...
+	</div>
+    <!-- Form -->
+
+    <div class="card">
+
+        <input type="hidden" id="studentId">
+
+        <div class="row">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email">
+
+        </div>
+
+        <div class="row">
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone">
+
+            <input
+                type="text"
+                id="course"
+                placeholder="Course">
+
+        </div>
+
+        <button id="saveBtn">
+            Save Student
+        </button>
+
+    </div>
+
+    <!-- Search -->
+
+    <div class="card">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Student">
+
+    </div>
+
+    <!-- Table -->
+
+    <div class="card">
+
+        <table id="studentTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
